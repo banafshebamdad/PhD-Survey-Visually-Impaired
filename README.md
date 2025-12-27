@@ -53,7 +53,7 @@ inductive thematic analysis of open-ended responses :contentReference[oaicite:0]
 - [Preprint version of the survey paper](Navigating_Independence__A_Survey_of_Visually_Impaired_People_s_Experiences_and_Needs-2.pdf) 
 
 ### Questionnaire
-- [`questionnaire](questionnaire):` Accessible HTML version of the survey questionnaire (screen-reader compatible).
+- [`questionnaire`](questionnaire/): Accessible HTML version of the survey questionnaire (screen-reader compatible).
 - `questionnaire/questionnaire.md`  
   Markdown version of the questionnaire for direct inspection on GitHub.
 - `questionnaire/questionnaire.pdf`  
