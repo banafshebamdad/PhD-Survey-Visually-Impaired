@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A questionnaire about navigational assistive technologies for visually impaired people for PhD research</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script type="text/javascript">
+function generateGuid() {
+  var result, i, j;
+  result = '';
+  for(j=0; j<32; j++) {
+    if( j == 8 || j == 12 || j == 16 || j == 20)
+      result = result + '_';
+    i = Math.floor(Math.random()*16).toString(16).toUpperCase();
+    result = result + i;
+  }
+ uuid = Number(new Date()) + "_" + result;
+ document.getElementById("user_uuid").value = uuid;
+ sessionStorage.setItem("user_uuid", uuid);
+// JSON.stringify(jsArray) converts the jsArray into a string which can be stored in sessionStorage
+ jsarray = ["cat", "dog", "tiger", "wolf"];
+ sessionStorage.setItem("jsArray", JSON.stringify(jsarray));
+}
+</script>
+</head>
+
+<body onload="javascript:generateGuid()">
+ <div class="container mt-5"><!-- div 1 -->
+  <header role="">
+   <h1>A questionnaire about navigational assistive technologies for visually impaired people for PhD research</h1>
+  </header>
+
+  <main role="main">
+   <h2 class="p-3 mt-5 mb-2 bg-info text-white">Introduction</h2>
+   <div class="mt-3"><!-- div 2 -->
+    <p>
+     I am Marziyeh Bamdad, a PhD student at the University of Zurich. 
+     With this questionnaire, we want to understand the experience and needs of people with visual impairment.  
+     More specifically, we focus on digital assistive technologies that help visually impaired people with indoor and outdoor navigation. 
+     Depending on your answers, there are between 14 and 18 questions in this survey. It will take between 10 and 15 minutes. 
+     This information will be only used for this Ph.D. research and will be destroyed after this study is complete.
+    </p>
+    <p>I am grateful for your time and effort dedicated to filling in this questionnaire.</p>
+   </div><!-- div 2-->
+   <a class="btn btn-primary" href="personal_info.html" role="button">Next</a>
+  </main>
+ </div><!-- div 1-->
+ <!-- aria-hidden: hide it from being read -->
+ <input aria-hidden="true" name="user_uuid" id="user_uuid" type="hidden" style="width: 50%;" />
+</body>
+</html>
