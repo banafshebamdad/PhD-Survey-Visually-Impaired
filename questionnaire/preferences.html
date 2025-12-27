@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A questionnaire about navigational assistive technologies for visually impaired people for PhD research</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script type="text/javascript" src="js/my_utils.js"></script>
+ <script type="text/javascript" src="js/preferences.js"></script>
+</head>
+
+<body onload="init_preferences();update_question_numbers()">
+
+ <div class="container mt-5"><!-- div 1 -->
+
+  <main role="main">
+  
+  <div class="alert alert-primary" role="alert">
+    <a href="/" onclick="validate_and_save_data();">A questionnaire about navigational assistive technologies for visually impaired people for PhD research</a>
+  </div>
+  
+  
+   <form>
+    <h1 id="field_required_error" aria-live="assertive"></h1>
+    <h1 class="p-3 mb-2 mt-5 bg-info text-white">Preferences</h1>
+    <div class="mt-5"><!-- div 2 -->
+
+    <!-- Q13 -->
+    <div id="div_13">
+     <span id="q13_error"></span>
+     <fieldset>
+      <legend><span id="q13_anchor"></span><span id="num_13">13</span>) What kind of assistive technology for navigation do you prefer? (required)</legend>
+      <div style="padding-left: 40px;"><!-- fieldset body -->
+       <div>
+        <input name="q13" value="Wearable" id="q13_o1" type="radio" onclick="clean_q13()">
+        <label for="q13_o1">Wearable (e.g. smart glasses, smart watches, wear on the shoulder, shoes, ...)</label>
+       </div>
+
+       <div>
+        <input name="q13" value="Handheld" id="q13_o2" type="radio" onclick="clean_q13()">
+        <label for="q13_o2">Handheld (e.g. smart cane, ...)</label>
+       </div>
+
+       <div>
+        <input name="q13" value="Other" id="q13_o3" type="radio" onclick="toggle_q13_o3(); focus_on_element('q13_other_text')">
+        <label for="q13_o3">Other (please specify)</label>
+       </div>
+       
+       <div>
+        <label id="q13_other_text_label" for="q13_other_text" style="display: none;">Please specify what kind of assistive technology for navigation you prefer.</label>
+        <textarea cols=50 rows=4 name="q13_other_text" id="q13_other_text" style="display: none;"></textarea>
+       </div>
+
+      </div><!-- fieldset body -->
+     </fieldset>
+    </div>
+   <!-- end Q13 -->
+   
+   <!-- Q14 -->
+    <div id="div_14">
+     <span id="q14_error"></span>
+     <fieldset>
+      <legend><span id="q14_anchor"></span><span id="num_14">14</span>) How do you prefer to receive information about your surroundings? (required)</legend>
+      <div style="padding-left: 40px;"><!-- fieldset body -->
+       <div>
+        <input name="q14" value="Speech" id="q14_o1" type="radio" onclick="clean_q14()">
+        <label for="q14_o1">Speech</label>
+       </div>
+
+       <div>
+        <input name="q14" value="Beeping_sound" id="q14_o2" type="radio" onclick="clean_q14()">
+        <label for="q14_o2">Beeping sound</label>
+       </div>
+       
+       <div>
+        <input name="q14" value="Tactile" id="q14_o3" type="radio" onclick="clean_q14()">
+        <label for="q14_o3">Tactile (vibration)</label>
+       </div>
+
+       <div>
+        <input name="q14" value="Combination" id="q14_o4" type="radio" onclick="toggle_q14_o4(); focus_on_element('q14_other_text')">
+        <label for="q14_o4"> A combination of the above or something else (please specify)</label>
+       </div>
+       
+       <div>
+        <label id="q14_other_text_label" for="q14_other_text" style="display: none;">Please specify how you prefer to receive information about your surroundings.</label>
+        <textarea cols=50 rows=4 name="q14_other_text" id="q14_other_text" style="display: none;"></textarea>
+       </div>
+
+      </div><!-- fieldset body -->
+     </fieldset>
+    </div>
+   <!-- end Q14 -->
+   
+   <!-- Q15 -->
+   <div id="div_15">
+    <span id="q15_error"></span>
+    <fieldset>
+     <legend><span id="q15_anchor"></span><span id="num_15">15</span>) In the case of tactile feedback, which part of your body do you prefer to receive the feedback? (Multiple options possible) (required)</legend>
+     <div style="padding-left: 40px;"><!-- fieldset body -->
+      <div>
+       <input name="q15" id="q15_o1" type="checkbox">
+       <label for="q15_o1">Forehead</label>
+      </div>
+
+      <div>
+       <input name="q15" id="q15_o2" type="checkbox">
+       <label for="q15_o2">Shoulders</label>
+      </div>
+
+      <div>
+       <input name="q15" id="q15_o3" type="checkbox">
+       <label for="q15_o3">Wrists</label>
+      </div>
+
+      <div>
+       <input name="q15" id="q15_o4" type="checkbox">
+       <label for="q15_o4">Hands and arms</label>
+      </div>
+      
+      <div>
+       <input name="q15" id="q15_o5" type="checkbox">
+       <label for="q15_o5">Waist</label>
+      </div>
+      
+      <div>
+       <input name="q15" id="q15_o6" type="checkbox">
+       <label for="q15_o6">Legs</label>
+      </div>
+      
+      <div>
+       <input name="q15" id="q15_o7" type="checkbox">
+       <label for="q15_o7">Feet</label>
+      </div>
+
+     </div><!-- fieldset body -->
+    </fieldset>
+   </div>
+   <!-- end Q15 -->
+   
+   <!-- Q16 -->
+   <div id="div_16">
+    <span id="q16_error"></span>
+    <fieldset>
+     <legend><span id="q16_anchor"></span><span id="num_16">16</span>) Which of the following characteristics are most important to you when using assistive technology for navigation? (Multiple options possible) (required)</legend>
+     <div style="padding-left: 40px;"><!-- fieldset body -->
+      <div>
+       <input name="q16" id="q16_o1" type="checkbox">
+       <label for="q16_o1">Low mental load</label>
+      </div>
+
+      <div>
+       <input name="q16" id="q16_o2" type="checkbox">
+       <label for="q16_o2">Low physical effort</label>
+      </div>
+
+      <div>
+       <input name="q16" id="q16_o3" type="checkbox">
+       <label for="q16_o3">Ease of use</label>
+      </div>
+
+      <div>
+       <input name="q16" id="q16_o4" type="checkbox">
+       <label for="q16_o4">Identification and avoidance of obstacles</label>
+      </div>
+      
+      <div>
+       <input name="q16" id="q16_o5" type="checkbox">
+       <label for="q16_o5">Low weight of the device</label>
+      </div>
+      
+      <div>
+       <input name="q16" id="q16_o6" type="checkbox">
+       <label for="q16_o6">Low cost</label>
+      </div>
+      
+      <div>
+       <input name="q16" id="q16_o7" type="checkbox">
+       <label for="q16_o7">Receiving remote help</label>
+      </div>
+
+     </div><!-- fieldset body -->
+    </fieldset>
+   </div>
+   <!-- end Q16 -->
+   
+   <!-- Q17 -->
+   <div id="div_17">
+    <span id="q17_error"></span>
+    <fieldset>
+     <legend><span id="q17_anchor"></span><span id="num_17">17</span>) Which of the following options are important to you for choosing a path when traveling from one place to another? (Multiple options possible) (required)</legend>
+     <div style="padding-left: 40px;"><!-- fieldset body -->
+      <div>
+       <input name="q17" id="q17_o1" type="checkbox">
+       <label for="q17_o1">Routing through the shortest distance</label>
+      </div>
+
+      <div>
+       <input name="q17" id="q17_o2" type="checkbox">
+       <label for="q17_o2">Routing through a path with the fastest traveling time</label>
+      </div>
+
+      <div>
+       <input name="q17" id="q17_o3" type="checkbox">
+       <label for="q17_o3">Routing through a path with low cost</label>
+      </div>
+
+      <div>
+       <input name="q17" id="q17_o4" type="checkbox">
+       <label for="q17_o4">Routing through an optimal path with the least hurdles (as obstacle-free as possible)</label>
+      </div>
+      
+      <div>
+       <input name="q17" id="q17_o5" type="checkbox">
+       <label for="q17_o5">Providing route information</label>
+      </div>
+      
+      <div>
+       <input name="q17" id="q17_o6" type="checkbox">
+       <label for="q17_o6">Providing constant assistance for navigating from my location to my desired destination</label>
+      </div>
+      
+      <div>
+       <input name="q17" id="q17_o7" type="checkbox">
+       <label for="q17_o7">Re-routing quickly from my position to my desired destination once an obstacle has been detected in the suggested path</label>
+      </div>
+
+     </div><!-- fieldset body -->
+    </fieldset>
+   </div>
+   <!-- end Q17 -->
+   
+   <!-- Q18 -->
+   <div id="div_18">
+    <fieldset>
+      <legend><label for="q18"><span id="num_18">18</span>) What should your ideal assistive technology for navigation look like?</label></legend>
+      <div style="padding-left: 40px;">
+     <textarea cols=50 rows=4 name="q18" id="q18"></textarea>
+    </div>
+    </fieldset>
+   </div>
+   <!-- end Q18 -->
+
+
+    </div><!-- div 2-->
+    <div class="mt-5 mb-5"><!-- previous and next buttons -->
+     <a class="btn btn-secondary" href="personal_experience.html" role="button" id="previous_btn" onclick="validate_and_save_data()">Previous</a>
+     <a class="btn btn-primary" href="comments.html" role="button"id="next_btn" onclick="validate_and_save_data()">Next</a>
+    </div><!-- previous and next buttons -->
+   </form>
+  </main>
+ </div><!-- div 1-->
+</body>
+
+</html>
+

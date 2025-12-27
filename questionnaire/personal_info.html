@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>A questionnaire about navigational assistive technologies for visually impaired people for PhD research</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script type="text/javascript" src="js/personal_info.js"></script>
+</head>
+
+<body onload="init_personal_info()">
+
+ <div class="container mt-5"><!-- div 1 -->
+
+  <main role="main">
+  <div class="alert alert-primary" role="alert">
+    <a href="/" onclick="validate_and_save_data()">A questionnaire about navigational assistive technologies for visually impaired people for PhD research</a>
+  </div>
+  <form>
+   <h1 id="field_required_error" aria-live="assertive"></h1>
+   <h1 class="p-3 mb-2 mt-5 bg-info text-white">Personal Information</h1>
+
+   <div class="mt-3"><!-- div 2 -->
+
+   <!-- Q1 -->
+   <div id="div_1">
+   <span id="q1_error"></span>
+   <fieldset>
+   <legend><span id="q1_anchor"></span><span id="num_1">1</span>) Region of residence (required)</legend>
+    <div style="padding-left: 40px;">
+    <div>
+     <input name="q1" value="Africa" id="q1_o1" type="radio">
+     <label for="q1_o1">Africa</label>
+    </div>
+
+    <div>
+     <input name="q1" value="Asia_Pacific" id="q1_o2" type="radio">
+     <label for="q1_o2">Asia-Pacific</label>
+    </div>
+
+    <div>
+     <input name="q1" value="Eastern_Europe" id="q1_o3" type="radio">
+     <label for="q1_o3">Eastern Europe</label>
+    </div>
+
+    <div>
+     <input name="q1" value="Latin_America_and_Caribbean" id="q1_o4" type="radio">
+     <label for="q1_o4">Latin America and Caribbean</label>
+    </div>
+
+    <div>
+     <input name="q1" value="Western_Europe_and_other_States" id="q1_o5" type="radio">
+     <label for="q1_o5">Western Europe and other States</label>
+     </div>
+    </div>
+   </fieldset>
+   </div>
+   <!-- end Q1 -->
+
+   <!-- Q2 -->
+   <div id="div_2">
+   <span id="q2_error"></span>
+   <fieldset>
+   <legend><span id="q2_anchor"></span><span id="num_2">2</span>) What is your age? (required)</legend>
+    <div style="padding-left: 40px;">
+    <div>
+     <input name="q2" value="Under_15" id="q2_o1" type="radio">
+     <label for="q2_o1">Under 15</label>
+    </div>
+
+    <div>
+     <input name="q2" value="15-30" id="q2_o2" type="radio">
+     <label for="q2_o2">15-30 years old</label>
+    </div>
+
+    <div>
+     <input name="q2" value="30-45" id="q2_o3" type="radio">
+     <label for="q2_o3">30-45 years old</label>
+    </div>
+
+    <div>
+     <input name="q2" value="45-60" id="q2_o4" type="radio">
+     <label for="q2_o4">45-60 years old</label>
+    </div>
+
+    <div>
+     <input name="q2" value="60+" id="q2_o5" type="radio">
+     <label for="q2_o5">60+</label>
+     </div>
+
+     <div>
+     <input name="q2" value="Prefer_not_to_answer" id="q2_o6" type="radio">
+     <label for="q2_o6">Prefer not to answer</label>
+     </div>
+
+    </div>
+   </fieldset>
+   </div>
+   <!-- end Q2 -->
+   
+   <!-- Q3 -->
+   <div id="div_3">
+    <span id="q3_error"></span>
+    <fieldset>
+     <legend><span id="q3_anchor"></span><span id="num_3">3</span>) What gender do you identify as? (required)</legend>
+     <div style="padding-left: 40px;"><!-- fieldset body -->
+      <div>
+       <input name="q3" value="Male" id="q3_o1" type="radio">
+       <label for="q3_o1">Male</label>
+      </div>
+
+      <div>
+       <input name="q3" value="Female" id="q3_o2" type="radio">
+       <label for="q3_o2">Female</label>
+      </div>
+
+      <div>
+       <input name="q3" value="Non_binary" id="q3_o3" type="radio">
+       <label for="q3_o3">Non-binary</label>
+      </div>
+
+      <div>
+       <input name="q3" value="Prefer_not_to_answer" id="q3_o4" type="radio">
+       <label for="q3_o4">Prefer not to answer</label>
+      </div>
+
+     </div><!-- fieldset body -->
+    </fieldset>
+   </div>
+   <!-- end Q3 -->
+   
+   <!-- Q4 -->
+   <div id="div_4">
+    <span id="q4_error"></span>
+    <fieldset>
+     <legend><span id="q4_anchor"></span><span id="num_4">4</span>) Were you born with a visual impairment? (required)</legend>
+     <div style="padding-left: 40px;"><!-- fieldset body -->
+      <div>
+       <input name="q4" value="Yes" id="q4_o1" type="radio">
+       <label for="q4_o1">Yes</label>
+      </div>
+
+      <div>
+       <input name="q4" value="No" id="q4_o2" type="radio">
+       <label for="q4_o2">No</label>
+      </div>
+
+      <div>
+       <input name="q4" value="Prefer_not_to_answer" id="q4_o3" type="radio">
+       <label for="q4_o3">Prefer not to answer</label>
+      </div>
+
+     </div><!-- fieldset body -->
+    </fieldset>
+   </div>
+   <!-- end Q4 -->
+   
+   <!-- Q5 -->
+   <div id="div_5">
+    <span id="q5_error"></span>
+    <fieldset>
+     <legend><span id="q5_anchor"></span><span id="num_5">5</span>) What is the severity of your visual impairment? (required)</legend>
+     <div style="padding-left: 40px;"><!-- fieldset body -->
+      <div>
+       <input name="q5" value="Mild" id="q5_o1" type="radio">
+       <label for="q5_o1">Mild</label>
+      </div>
+
+      <div>
+       <input name="q5" value="Moderate" id="q5_o2" type="radio">
+       <label for="q5_o2">Moderate</label>
+      </div>
+
+      <div>
+       <input name="q5" value="Severe" id="q5_o3" type="radio">
+       <label for="q5_o3">Severe</label>
+      </div>
+
+      <div>
+       <input name="q5" value="Total_Blindness" id="q5_o4" type="radio">
+       <label for="q5_o4">Total Blindness</label>
+      </div>
+
+     </div><!-- fieldset body -->
+    </fieldset>
+   </div>
+   <!-- end Q5 -->
+   
+
+   </div><!-- div 2 containing personal information questions-->
+   <div class="mt-5 mb-5"><!-- previous and next buttons -->
+    <a class="btn btn-secondary" href="index.html" role="button" id="previous_btn" onclick="validate_and_save_data()">Previous</a>
+    <a class="btn btn-primary" href="personal_experience.html" role="button" id="next_btn" onclick="validate_and_save_data()">Next</a>
+   </div><!-- previous and next buttons -->
+  </form>
+  </main>
+ </div><!-- div 1 containing the whole page content -->
+</body>
+
+<script type="text/javascript">
+
+</script>
+
+</html>
+

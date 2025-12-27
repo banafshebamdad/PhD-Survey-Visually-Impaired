@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>A questionnaire about navigational assistive technologies for visually impaired people for PhD research</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script type="text/javascript" src="js/comments.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body onload="init_last_comments()">
+
+ <div class="container mt-5"><!-- div 1 -->
+
+  <main role="main">
+  <div class="alert alert-primary" role="alert">
+    <a href="/" onclick="validate_and_save_data()">A questionnaire about navigational assistive technologies for visually impaired people for PhD research</a>
+  </div>
+  
+  <form>
+   <h1 class="p-3 mb-2 mt-5 bg-info text-white">Last comments</h1>
+   <div class="mt-5"><!-- div 2 -->
+   
+    <!-- last comments -->
+    <fieldset>
+      <legend><label for="last_comments">Do you have any additional comments or suggestions?</label></legend>
+      <div style="padding-left: 40px;">
+       <textarea cols=50 rows=4 name="last_comments" id="last_comments"></textarea>
+      </div>
+    </fieldset>
+    <!-- last comments -->
+   
+   </div><!-- div 2-->
+   
+   <div class="mt-5 mb-5"><!-- previous and next buttons -->
+    <a class="btn btn-secondary" href="preferences.html" role="button" id="previous_btn" onclick="validate_and_save_data() ">Previous</a>
+    <input id="submit" type="button" class="btn btn-submit btn-primary" value="Submit" />
+   </div>
+  </form>
+  </main>
+ </div><!-- div 1-->
+ 
+<script>
+
+ $(document).ready(function() {
+ 
+  $("#submit").click(function() {
+  
+   data = save_data();
+   data.last_comments_value = $('#last_comments').val();
+  
+   $.ajax({
+    type: "POST",
+    url: "submission.php",
+    data: data,
+    /*
+    data: {
+     file_name: file_name,
+    },
+    
+    processData: false,
+    contentType: false,
+    */
+    cache: false,
+    success: function(data) {
+     console.log(data);
+     sessionStorage.clear();
+     window.location.href = 'thanks.html';
+    },
+    error: function(xhr, status, error) {
+     console.error(xhr);
+     window.location.href = 'error.html';
+    }
+   });
+  
+  });
+ 
+ });
+</script>
+
+</body>
+
+</html>
+
