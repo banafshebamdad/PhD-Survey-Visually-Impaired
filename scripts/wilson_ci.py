@@ -15,6 +15,8 @@ Usage examples:
   python wilson_ci.py --conf 0.95 --digits 1 --as-percent \
     "Satisfied=18/32" "Dissatisfied=6/32"
 
+python wilson_ci.py --conf 0.95 --digits 1 --as-percent "Q6. Samartphone-based (66.67%)=28/42" "Q6. not use any (23.81%)=10/42" "Q8. satisfied (46.88%)=15/32" "Q8. dissatisfaction (15.63%)=5/32" "Q8. uncertainty (6.25%)=2/32" "Q11. finding routes=29/42" "Q11. locating objects in outdoor=24/42" "Q12. Head-level (38.55)=32/42" "Q12. ground-level (%)=17/42" "Q7. using for outdoor or for both (93.75%)=30/32" "Q13. wearable (61.9%)=26/42" "Q13. handheld (28.57%)=12/42" "Q13. other (9.52%)=4/42" "Q14. speech (40.48%)=17/42" "Q14. Multimodal (30.95%)=13/42" "Q14. Tactile (19.05%)=8/42" "Q15. Hands & arms (57.14%)=24/42" "Q17. obstcle-free (61.09%)=26/42" "Q17. Route info. (54.76%)=23/42" "Q17. Constant assistance (47.62%)=20/42" "Q17. hortest-distance & rapid re-routing (38.10%)=16/42" "Q16. ease of use (80.95%)=34/42" "Q16. low cost (66.67%)=28/42" "Q16. mental load & device weight (52.38%)=22/42" "Q16. physical effort & avoidance of obstacles (47.62%)=20/42" "Q9. sufficient feedback (18.75%)=6/32" "Q9. insufficient feedback - obstacles (31.25%)=10/32" "Q9. insufficient feedback outdoor (25.00%)=8/32" "Q9. insufficient feedback - intdoor (12.50%)=4/32" "Q10. always or most of the time (40.63%)=13/32" "Q10. sometimes (37.5%)=12/32" "Q10. rarely or never (18.75%)=6/32" "Q10. unsure (3.13%)=1/32" 
+
 Notes:
 - Wilson interval is recommended for small samples and proportions near 0/1.
 - For 95% CI, z ≈ 1.959963984540054 (normal quantile).
@@ -255,3 +257,41 @@ def main(argv: List[str]) -> int:
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
 
+
+"""
+Label                                                   k   n   %     Wilson 95% CI [low, high]
+------------------------------------------------------  --  --  ----  -------------------------
+Q6. Samartphone-based (66.67%)                          28  42  66.7  [51.6%, 79.0%]           
+Q6. not use any (23.81%)                                10  42  23.8  [13.5%, 38.5%]           
+Q8. satisfied (46.88%)                                  15  32  46.9  [30.9%, 63.6%]           
+Q8. dissatisfaction (15.63%)                            5   32  15.6  [6.9%, 31.8%]            
+Q8. uncertainty (6.25%)                                 2   32  6.2   [1.7%, 20.1%]            
+Q11. finding routes                                     29  42  69.0  [54.0%, 80.9%]           
+Q11. locating objects in outdoor                        24  42  57.1  [42.2%, 70.9%]           
+Q12. Head-level (38.55)                                 32  42  76.2  [61.5%, 86.5%]           
+Q12. ground-level (%)                                   17  42  40.5  [27.0%, 55.5%]           
+Q7. using for outdoor or for both (93.75%)              30  32  93.8  [79.9%, 98.3%]           
+Q13. wearable (61.9%)                                   26  42  61.9  [46.8%, 75.0%]           
+Q13. handheld (28.57%)                                  12  42  28.6  [17.2%, 43.6%]           
+Q13. other (9.52%)                                      4   42  9.5   [3.8%, 22.1%]            
+Q14. speech (40.48%)                                    17  42  40.5  [27.0%, 55.5%]           
+Q14. Multimodal (30.95%)                                13  42  31.0  [19.1%, 46.0%]           
+Q14. Tactile (19.05%)                                   8   42  19.0  [10.0%, 33.3%]           
+Q15. Hands & arms (57.14%)                              24  42  57.1  [42.2%, 70.9%]           
+Q17. obstcle-free (61.09%)                              26  42  61.9  [46.8%, 75.0%]           
+Q17. Route info. (54.76%)                               23  42  54.8  [39.9%, 68.8%]           
+Q17. Constant assistance (47.62%)                       20  42  47.6  [33.4%, 62.3%]           
+Q17. hortest-distance & rapid re-routing (38.10%)       16  42  38.1  [25.0%, 53.2%]           
+Q16. ease of use (80.95%)                               34  42  81.0  [66.7%, 90.0%]           
+Q16. low cost (66.67%)                                  28  42  66.7  [51.6%, 79.0%]           
+Q16. mental load & device weight (52.38%)               22  42  52.4  [37.7%, 66.6%]           
+Q16. physical effort & avoidance of obstacles (47.62%)  20  42  47.6  [33.4%, 62.3%]           
+Q9. sufficient feedback (18.75%)                        6   32  18.8  [8.9%, 35.3%]            
+Q9. insufficient feedback - obstacles (31.25%)          10  32  31.2  [18.0%, 48.6%]           
+Q9. insufficient feedback outdoor (25.00%)              8   32  25.0  [13.3%, 42.1%]           
+Q9. insufficient feedback - intdoor (12.50%)            4   32  12.5  [5.0%, 28.1%]            
+Q10. always or most of the time (40.63%)                13  32  40.6  [25.5%, 57.7%]           
+Q10. sometimes (37.5%)                                  12  32  37.5  [22.9%, 54.7%]           
+Q10. rarely or never (18.75%)                           6   32  18.8  [8.9%, 35.3%]            
+Q10. unsure (3.13%)                                     1   32  3.1   [0.6%, 15.7%]   
+"""
