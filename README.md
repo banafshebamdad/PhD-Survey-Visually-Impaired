@@ -45,9 +45,7 @@ inductive thematic analysis of open-ended responses.
 
 
 ### Recruitment
-- `recruitment/organizations_list.md`: High-level description of recruitment channels and organization types involved
-  in survey dissemination. Individual names are intentionally omitted to protect
-  privacy.
+- [Survey distribution](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/Survey-distribution): list of the organizations and institutions contacted for survey distribution. Individual names are intentionally omitted to protect   privacy.
 
 ---
 
@@ -66,11 +64,9 @@ The questionnaire was designed to be fully accessible and was:
 - Participation was voluntary.
 - Eligibility was based on self-identification as blind or visually impaired.
 - No personally identifiable information was collected or retained.
-- Duplicate, test, and incomplete responses were removed prior to analysis.
 - Only anonymized and aggregated data are included in this repository.
 
-This repository does not contain raw identifiable data, contact information, or
-private communications.
+This repository does not contain raw identifiable data, contact information, or private communications.
 
 ---
 
@@ -83,8 +79,4 @@ If you use any material from this repository, please cite the associated paper:
 
 (Full bibliographic details will be updated upon publication.)
 
----
 
-## License
-
-This repository is intended for academic and research use.
