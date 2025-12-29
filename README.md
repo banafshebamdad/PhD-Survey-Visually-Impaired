@@ -1,6 +1,6 @@
 # Navigating Independence: A Survey of Visually Impaired People’s Experiences and Needs
 
-This repository accompanies the research paper: Navigating Independence: A Survey of Visually Impaired People’s Experiences and Needs
+This repository accompanies the research paper: [Navigating Independence: A Survey of Visually Impaired People’s Experiences and Needs](paper.pdf)
 
 The paper reports the results of a fully accessible, globally distributed online
 survey investigating navigation experiences, challenges, and assistive
@@ -34,7 +34,7 @@ inductive thematic analysis of open-ended responses.
 ## Repository Contents
 
 ### Paper
-- [Preprint version of the survey paper](Navigating_Independence__A_Survey_of_Visually_Impaired_People_s_Experiences_and_Needs-2.pdf) 
+- [Preprint version of the survey paper](paper.pdf) 
 
 ### Questionnaire
 - [`questionnaire`](questionnaire/): Accessible HTML version of the survey questionnaire (screen-reader compatible).
@@ -45,7 +45,7 @@ inductive thematic analysis of open-ended responses.
 
 
 ### Recruitment
-- [Survey distribution](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/Survey-distribution): list of the organizations and institutions contacted for survey distribution. Individual names are intentionally omitted to protect   privacy.
+- [`Survey distribution`](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/Survey-distribution): list of the organizations and institutions contacted for survey distribution. Individual names are intentionally omitted to protect   privacy.
 
 ---
 
