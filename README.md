@@ -2,21 +2,16 @@
 
 This repository accompanies the research paper: [Navigating Independence: A Survey of Visually Impaired People’s Experiences and Needs](paper.pdf)
 
-The paper reports the results of a fully accessible, globally distributed online
-survey investigating navigation experiences, challenges, and assistive
-technology preferences of blind and visually impaired (BVI) individuals.
+The paper reports the results of a fully accessible, globally distributed online survey investigating navigation experiences, challenges, and assistive technology preferences of blind and visually impaired (BVI) individuals.
 
-This repository provides public access to the survey questionnaire and
-supporting documentation referenced in the paper.
+This repository provides public access to the survey questionnaire and supporting documentation referenced in the paper.
 
 ---
 
 ## Overview of the Study
 
-Independent navigation in unfamiliar environments remains a major challenge for
-blind and visually impaired individuals. While a wide range of assistive
-navigation technologies exists, their adoption and effectiveness in everyday
-settings vary significantly.
+Independent navigation in unfamiliar environments remains a major challenge for blind and visually impaired individuals. While a wide range of assistive
+navigation technologies exists, their adoption and effectiveness in everyday settings vary significantly.
 
 The study presented in the accompanying paper is based on:
 - A fully accessible online questionnaire
@@ -26,8 +21,7 @@ The study presented in the accompanying paper is based on:
 - 42 completed responses from participants with varying degrees of visual
   impairment
 
-The analysis combines descriptive quantitative statistics with qualitative
-inductive thematic analysis of open-ended responses.
+The analysis combines descriptive quantitative statistics with qualitative inductive thematic analysis of open-ended responses.
 
 ---
 
@@ -41,7 +35,7 @@ inductive thematic analysis of open-ended responses.
 - [`questionnaire.md`](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/questionnaire): Markdown version of the questionnaire for direct inspection on GitHub.
 
 ### Data
-- `data/summary_statistics`: Derived statistics reported in the paper.
+- [`data/summary_statistics`](/data/summary_statistics): Derived statistics reported in the paper.
 
 
 ### Recruitment
