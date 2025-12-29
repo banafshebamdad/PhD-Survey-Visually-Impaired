@@ -26,13 +26,6 @@ The study presented in the accompanying paper is based on:
 - 42 completed responses from participants with varying degrees of visual
   impairment
 
-The survey captures:
-- Navigation experiences in unfamiliar environments
-- Use and non-use of assistive navigation technologies
-- Reported challenges such as obstacle detection and wayfinding
-- Preferences regarding device form factors and feedback modalities
-- User expectations and design considerations expressed in open-ended responses
-
 The analysis combines descriptive quantitative statistics with qualitative
 inductive thematic analysis of open-ended responses.
 
@@ -48,9 +41,8 @@ inductive thematic analysis of open-ended responses.
 - [`questionnaire.md`](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/questionnaire): Markdown version of the questionnaire for direct inspection on GitHub.
 
 ### Data
-- `data/raw/responses_anonymized.csv`: Anonymized survey responses.
-- `data/processed/summary_statistics.csv`: Aggregated counts, percentages, and derived statistics reported in the paper.
-- `data/README.md`: Description of data fields, preprocessing, and anonymization steps.
+- `data/responses_anonymized.csv`: Anonymized survey responses.
+- `data/summary_statistics.csv`: Aggregated counts, percentages, and derived statistics reported in the paper.
 
 ### Analysis
 - `analysis/analysis_description.md`: Description of quantitative and qualitative analysis procedures, including:
