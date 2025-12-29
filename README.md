@@ -41,7 +41,7 @@ inductive thematic analysis of open-ended responses.
 - [`questionnaire.md`](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/questionnaire): Markdown version of the questionnaire for direct inspection on GitHub.
 
 ### Data
-- `data/responses_anonymized.csv`: Anonymized survey responses.
+- [`data/responses_anonymized.csv`](data/responses_anonymized.csv): Anonymized survey responses.
 - `data/summary_statistics.csv`: Aggregated counts, percentages, and derived statistics reported in the paper.
 
 ### Analysis
