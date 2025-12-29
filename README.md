@@ -62,11 +62,8 @@ The questionnaire was designed to be fully accessible and was:
 ## Data Privacy and Ethics
 
 - Participation was voluntary.
-- Eligibility was based on self-identification as blind or visually impaired.
 - No personally identifiable information was collected or retained.
 - Only anonymized and aggregated data are included in this repository.
-
-This repository does not contain raw identifiable data, contact information, or private communications.
 
 ---
 
