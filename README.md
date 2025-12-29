@@ -46,7 +46,6 @@ inductive thematic analysis of open-ended responses.
 ### Questionnaire
 - [`questionnaire`](questionnaire/): Accessible HTML version of the survey questionnaire (screen-reader compatible).
 - [`questionnaire.md`](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/questionnaire): Markdown version of the questionnaire for direct inspection on GitHub.
-- `questionnaire/questionnaire.pdf`: Reference PDF version of the questionnaire.
 
 ### Data
 - `data/raw/responses_anonymized.csv`: Anonymized survey responses.
