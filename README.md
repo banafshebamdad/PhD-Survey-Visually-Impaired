@@ -41,25 +41,13 @@ inductive thematic analysis of open-ended responses.
 - [`questionnaire.md`](https://github.com/banafshebamdad/PhD-Survey-Visually-Impaired/wiki/questionnaire): Markdown version of the questionnaire for direct inspection on GitHub.
 
 ### Data
-- [`data/responses_anonymized.csv`](data/responses_anonymized.csv): Anonymized survey responses.
-- `data/summary_statistics.csv`: Aggregated counts, percentages, and derived statistics reported in the paper.
+- `data/summary_statistics`: Derived statistics reported in the paper.
 
-### Analysis
-- `analysis/analysis_description.md`: Description of quantitative and qualitative analysis procedures, including:
-  - Percentage and count reporting
-  - Use of Wilson score intervals for 95% confidence intervals
-  - Inductive thematic analysis of open-ended responses
-- `analysis/confidence_intervals.md`: Explanation of the Wilson 95% confidence interval method used for key
-  proportions.
 
 ### Recruitment
 - `recruitment/organizations_list.md`: High-level description of recruitment channels and organization types involved
   in survey dissemination. Individual names are intentionally omitted to protect
   privacy.
-
-### Ethics
-- `ethics/ethics_statement.md`: Statement outlining informed consent, anonymity, and ethical handling of
-  participant data.
 
 ---
 
