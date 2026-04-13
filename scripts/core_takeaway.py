@@ -8,6 +8,8 @@ Original file is located at
 """
 
 #
+# Banafshe Marziyeh Bamdad
+# banafshebamdad@gmail.com, bamdad@ifi.uzh.ch
 # Used in paper
 # accessible colors
 # ensures 1-decimal point precision for percentages
@@ -188,29 +190,3 @@ ax1.set_ylabel('Number of Participants', fontsize=11)
 plt.tight_layout()
 plt.show()
 
-# # --- PLOT 2: USER PRIORITIES ---
-# fig2, ax2 = plt.subplots(figsize=(10, 6))
-
-# # Extract top characteristics
-# q16_col = 'Q16. Which of the following characteristics are most important to you when using assistive technology for navigation? (Multiple options possible) (required)'
-# top_chars = clean_multi_choice(df[q16_col]).head(6)
-
-# # Create horizontal bar chart
-# sns.barplot(x=top_chars.values, y=top_chars.index, palette='viridis', ax=ax2)
-
-# # Add count labels
-# for i, v in enumerate(top_chars.values):
-#     ax2.text(v + 0.5, i, str(v), color='black', va='center', fontweight='bold')
-
-# # Remove "other lines"
-# sns.despine(ax=ax2)
-# ax2.grid(False)
-
-# ax2.set_title('User Priorities: Key Requirements for Ideal DAT', fontsize=14, fontweight='bold', pad=20)
-# ax2.set_xlabel('Frequency of Mention', fontsize=11)
-# ax2.set_ylabel('')
-
-# plt.tight_layout()
-# plt.savefig('user_priorities_clean.png', dpi=300, bbox_inches='tight')
-# print("Saved: user_priorities_clean.png")
-# plt.show()
